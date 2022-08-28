@@ -55,7 +55,7 @@
 				</div>
 				<br>
 				<ul class="nav pcoded-inner-navbar ">
-					<li class="nav-item"><a href="/index" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Beranda</span></a></li>
+					<li class="nav-item"><a href="/beranda" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Beranda</span></a></li>
 					<li class="nav-item"><a href="/jadwal-saya" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Jadwal Saya</span></a></li>
 					<li class="nav-item"><a href="/kontak-admin" class="nav-link "><span class="pcoded-micon"><i class="feather icon-phone"></i></span><span class="pcoded-mtext">Kontak Admin</span></a></li>
 				</ul>
@@ -160,7 +160,7 @@
                             <h5 class="m-b-10">Jadwal Saya</h5>
                         </div>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/index"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="/beranda"><i class="feather icon-home"></i></a></li>
                             <li class="breadcrumb-item"><a href="#!">Jadwal Saya</a></li>
                         </ul>
                     </div>
