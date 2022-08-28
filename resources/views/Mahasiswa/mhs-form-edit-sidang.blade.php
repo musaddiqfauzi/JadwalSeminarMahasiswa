@@ -320,166 +320,166 @@
 			id: 0,
 			text: '--- Pilih Dosen ---'
 		}, {
-			id: 1,
+			id: 'Prof. Dr. Ir Yuwaldi Away, M.Sc',
 			text: 'Prof. Dr. Ir Yuwaldi Away, M.Sc'
 		}, {
-			id: 2,
+			id: 'Prof. Dr. Ir. Nasaruddin, S.T.,M.Eng., IPU',
 			text: 'Prof. Dr. Ir. Nasaruddin, S.T.,M.Eng., IPU'
 		}, {
-			id: 3,
+			id: 'Prof. Dr. Khairul Munadi, S.T., M.Eng',
 			text: 'Prof. Dr. Khairul Munadi, S.T., M.Eng'
 		}, {
-			id: 4,
+			id: 'Prof. Dr. Fitri Arnia, S.T., M.Eng.Sc',
 			text: 'Prof. Dr. Fitri Arnia, S.T., M.Eng.Sc'
 		}, {
-			id: 5,
+			id: 'Prof. Dr. Teuku Yuliar Arif, S.T., M.Kom',
 			text: 'Prof. Dr. Teuku Yuliar Arif, S.T., M.Kom'
 		}, {
-			id: 6,
+			id: 'Dr. Tarmizi, S.T., M.Sc',
 			text: 'Dr. Tarmizi, S.T., M.Sc'
 		}, {
-			id: 7,
+			id: 'Dr. Ir. Syahrial, M.Eng',
 			text: 'Dr. Ir. Syahrial, M.Eng'
 		}, {
-			id: 8,
+			id: 'Dr. Ir. Rizal Munadi, MM., M.T.',
 			text: 'Dr. Ir. Rizal Munadi, MM., M.T.'
 		}, {
-			id: 9,
+			id: 'Dr. Rakhmad Syafutra Lubis, S.T., M.T.',
 			text: 'Dr. Rakhmad Syafutra Lubis, S.T., M.T.'
 		}, {
-			id: 10,
+			id: 'Dr. Taufiq A. Gani, S.Kom, M.Eng.Sc',
 			text: 'Dr. Taufiq A. Gani, S.Kom, M.Eng.Sc'
 		}, {
-			id: 11,
+			id: 'Dr. Ir. Suriadi, S.T., M.Sc., IPM., ASEAN.Eng',
 			text: 'Dr. Ir. Suriadi, S.T., M.Sc., IPM., ASEAN.Eng'
 		}, {
-			id: 12,
+			id: 'Dr. Ira Devi Sara, S.T., M.Eng.Sc',
 			text: 'Dr. Ira Devi Sara, S.T., M.Eng.Sc'
 		}, {
-			id: 13,
+			id: 'Dr. Rusdha Muharar, S.T., M.Sc',
 			text: 'Dr. Rusdha Muharar, S.T., M.Sc'
 		}, {
-			id: 14,
+			id: 'Dr. Ir. Melinda, S.T., M.Sc., IPU',
 			text: 'Dr. Ir. Melinda, S.T., M.Sc., IPU'
 		}, {
-			id: 15,
+			id: 'Dr. Ir. Ramzi Adriman, S.T., M.Sc',
 			text: 'Dr. Ir. Ramzi Adriman, S.T., M.Sc'
 		}, {
-			id: 16,
+			id: 'Afnan, S.Kom, MM(T), M.Sc',
 			text: 'Afnan, S.Kom, MM(T), M.Sc'
 		}, {
-			id: 17,
+			id: 'Ir. Mansur Gapy, M.T.',
 			text: 'Ir. Mansur Gapy, M.T.'
 		}, {
-			id: 18,
+			id: 'Ir. Syahrizal, M.T.',
 			text: 'Ir. Syahrizal, M.T.'
 		}, {
-			id: 19,
+			id: 'Syukriyadin, S.T., M.T.',
 			text: 'Syukriyadin, S.T., M.T.'
 		}, {
-			id: 20,
+			id: 'Ir. Agus Adria, M.Sc',
 			text: 'Ir. Agus Adria, M.Sc'
 		}, {
-			id: 21,
+			id: 'Ir. Ramdhan Halid Siregar, S.T., M.T., IPM.,ASEAN.Eng',
 			text: 'Ir. Ramdhan Halid Siregar, S.T., M.T., IPM.,ASEAN.Eng'
 		}, {
-			id: 22,
+			id: 'Ir. Hubbul Walidainy, S.T., M.T., IPM.,ASEAN.Eng',
 			text: 'Ir. Hubbul Walidainy, S.T., M.T., IPM.,ASEAN.Eng'
 		}, {
-			id: 23,
+			id: 'Ir. Mahdi Syukri, S.T., M.T., IPM',
 			text: 'Ir. Mahdi Syukri, S.T., M.T., IPM'
 		}, {
-			id: 24,
+			id: 'Ir. Fahri Heltha, M.Eng',
 			text: 'Ir. Fahri Heltha, M.Eng'
 		}, {
-			id: 25,
+			id: 'Ir. Ernita Dewi Meutia, PG.Dipl., M.Sc',
 			text: 'Ir. Ernita Dewi Meutia, PG.Dipl., M.Sc'
 		}, {
-			id: 26,
+			id: 'Mohd. Syaryadhi, S.T., M.Sc',
 			text: 'Mohd. Syaryadhi, S.T., M.Sc'
 		}, {
-			id: 27,
+			id: 'Dr. Alfisyahrin, S.T., M.T.',
 			text: 'Dr. Alfisyahrin, S.T., M.T.'
 		}, {
-			id: 28,
+			id: 'Muhammad Irhamsyah, S.T., M.T.',
 			text: 'Muhammad Irhamsyah, S.T., M.T.'
 		}, {
-			id: 29,
+			id: 'Zulhelmi, S.T., M.Sc',
 			text: 'Zulhelmi, S.T., M.Sc'
 		}, {
-			id: 30,
+			id: 'Ir. Yunidar, S.Si., M.T.',
 			text: 'Ir. Yunidar, S.Si., M.T.'
 		}, {
-			id: 31,
+			id: 'Ir. Yunidar, S.Si., M.T.',
 			text: 'Zulfikar, S.T., M.Sc'
 		}, {
-			id: 32,
+			id: 'Dr. Ir. Roslidar, S.T., M.Sc., IPM',
 			text: 'Dr. Ir. Roslidar, S.T., M.Sc., IPM'
 		}, {
-			id: 33,
+			id: 'Ir. Rahmad Dawood, S.Kom, M.Sc., IPM., ASEAN.Eng',
 			text: 'Ir. Rahmad Dawood, S.Kom, M.Sc., IPM., ASEAN.Eng'
 		}, {
-			id: 34,
+			id: 'Ir. Ahmadiar, S.T., M.Sc',
 			text: 'Ir. Ahmadiar, S.T., M.Sc'
 		}, {
-			id: 35,
+			id: 'Ir. Hafidh, S.T., M.T., IPU',
 			text: 'Ir. Hafidh, S.T., M.T., IPU'
 		}, {
-			id: 36,
+			id: 'Ir. Elizar, S.T., M.Sc., IPM',
 			text: 'Ir. Elizar, S.T., M.Sc., IPM'
 		}, {
-			id: 37,
+			id: 'Ir. Fardian, S.T., M.Sc',
 			text: 'Ir. Fardian, S.T., M.Sc'
 		}, {
-			id: 39,
+			id: 'Ir. Afdhal, S.T., M.Sc',
 			text: 'Ir. Afdhal, S.T., M.Sc'
 		}, {
-			id: 40,
+			id: 'Ir. Alfatirta Mufti, S.T., M.Sc',
 			text: 'Ir. Alfatirta Mufti, S.T., M.Sc'
 		}, {
-			id: 41,
+			id: 'Sayed Muchallil, S.T., M.Sc',
 			text: 'Sayed Muchallil, S.T., M.Sc'
 		}, {
-			id: 41,
+			id: 'Ardiansyah, BSEE., M.Sc',
 			text: 'Ardiansyah, BSEE., M.Sc'
 		}, {
-			id: 42,
+			id: 'Yudha Nurdin, S.T.,M.T.',
 			text: 'Yudha Nurdin, S.T.,M.T.'
 		}, {
-			id: 43,
+			id: 'Aulia Rahman, S.T., M.Sc',
 			text: 'Aulia Rahman, S.T., M.Sc'
 		}, {
-			id: 44,
+			id: 'Dr. Kahlil, S.T., M.Eng.',
 			text: 'Dr. Kahlil, S.T., M.Eng.'
 		}, {
-			id: 45,
+			id: 'Maya Fitria, S.Kom., M.Sc',
 			text: 'Maya Fitria, S.Kom., M.Sc'
 		}, {
-			id: 46,
+			id: 'Dr. Rita Khathir, S.TP, M.Sc',
 			text: 'Dr. Rita Khathir, S.TP, M.Sc'
 		}, {
-			id: 47,
+			id: 'Ir. Fathurrahman, S.T., M.Eng.Sc',
 			text: 'Ir. Fathurrahman, S.T., M.Eng.Sc'
 		}, {
-			id: 48,
+			id: 'Akhyar, S.T., M.Eng',
 			text: 'Akhyar, S.T., M.Eng'
 		}, {
-			id: 49,
+			id: 'Al Bahri, S.ST., M.T',
 			text: 'Al Bahri, S.ST., M.T'
 		}, {
-			id: 50,
+			id: 'Masduki Khamdan Muchamad, S.Kom., M.Sc.',
 			text: 'Masduki Khamdan Muchamad, S.Kom., M.Sc.'
 		}, {
-			id: 51,
+			id: 'Dr. Khairun Saddami, S.T',
 			text: 'Dr. Khairun Saddami, S.T'
 		}, {
-			id: 52,
+			id: 'Dr. Yunida, S.T.',
 			text: 'Dr. Yunida, S.T.'
 		}, {
-			id: 53,
+			id: 'Dr. Maulisa Oktiana, S.T.',
 			text: 'Dr. Maulisa Oktiana, S.T.'
 		}, {
-			id: 54,
+			id: 'Rika Sri Utami, M.Sc.',
 			text: 'Rika Sri Utami, M.Sc.'
 		}];
 		$(".js-dosen-array").select2({
@@ -490,19 +490,19 @@
        id: 0,
        text: '--- Pilih Bidang ---'
     }, {
-        id: 1,
+        id: 'Teknik Energi Listrik',
         text: 'Teknik Energi Listrik'
     }, {
-        id: 2,
+        id: 'Teknik Telekomunikasi',
         text: 'Teknik Telekomunikasi'
     },{
-        id: 3,
+        id: 'Teknik Informatika & Komputer',
         text: 'Teknik Informatika & Komputer'
     },{
-        id: 4,
+        id: 'Teknik Elektronika & Instrumentasi',
         text: 'Teknik Elektronika & Instrumentasi'
     },{
-        id: 5,
+        id: 'Teknik Sistem Kendali',
         text: 'Teknik Sistem Kendali'
     }];
     $(".js-bidang-array").select2({
