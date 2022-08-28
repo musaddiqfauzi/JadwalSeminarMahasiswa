@@ -78,3 +78,5 @@ Route::post('register',[AuthController::class,'Registration']);
 Route::get('/beranda',[SeminarController::class,'index'])->name('beranda');
 Route::post('proposal',[SeminarController::class,'store'])->name('proposal');
 
+Route::post('hasil',[SeminarController::class,'seminarhasil'])->name('seminarhasil');
+

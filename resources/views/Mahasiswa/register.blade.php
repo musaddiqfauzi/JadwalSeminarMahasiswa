@@ -54,7 +54,7 @@
                                 <label class="floating-label" for="Password">Konfirmasi Password</label>
                                 <input type="password" class="form-control" id="Password" placeholder="">
                             </div> --}}
-                            <a href="/index"><button class="btn btn-primary btn-block mb-4">Daftar</button></a>
+                            <button type="submit" class="btn btn-primary sweet-success mb-4">Daftar</button>
                         </form>
 						<p class="mb-2">Sudah punya akun? <a href="/login" class="f-w-400">Masuk</a></p>
 					</div>

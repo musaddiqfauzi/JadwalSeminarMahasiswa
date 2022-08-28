@@ -50,7 +50,7 @@
                             <input type="checkbox" class="form-check-input" id="customCheck1">
 							<label class="form-check-label" for="customCheck1">Simpan Informasi</label>
 						</div>
-						<button class="btn btn-block btn-primary mb-4">Masuk</button>
+						<button type="submit" class="btn btn-block btn-primary mb-4">Masuk</button>
                         </form>
 						<p class="mb-2 text-muted">Lupa password? <a href="/reset-password" class="f-w-400">Reset</a></p>
 						<p class="mb-0 text-muted">Belum terdaftar? <a href="/register" class="f-w-400">Daftar</a></p>

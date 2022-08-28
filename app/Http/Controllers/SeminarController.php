@@ -60,4 +60,42 @@ class SeminarController extends Controller
 
         return redirect()->route('beranda')->with('message', 'Upload complete');
     }
+
+    public function seminarhasil(Request $request)
+    {
+        $nim = '1504103010034';
+        $file_borang_ta_1 = Storage::putFile('hasil/' . $nim, $request->file('borang_ta_1'));
+        $file_buku_skripsi = Storage::putFile('hasil/' . $nim, $request->file('buku_skripsi'));
+        $file_slide_presentasi = Storage::putFile('hasil/' . $nim, $request->file('slide_presentasi'));
+        $file_bukti_persetujuan = Storage::putFile('hasil/' . $nim, $request->file('bukti_persetujuan'));
+
+
+        $borang_ta_1 = $request->file('borang_ta_1')->getClientOriginalName();
+        $buku_skripsi = $request->file('buku_skripsi')->getClientOriginalName();
+        $slide_presentasi = $request->file('slide_presentasi')->getClientOriginalName();
+        $bukti_persetujuan = $request->file('bukti_persetujuan')->getClientOriginalName();
+
+        $seminar = new Seminar;
+        $seminar -> name = 'akmal fadhilah';
+        $seminar -> nim = $nim;
+        $seminar -> judul = $request->judul;
+        $seminar -> dosen_pembimbing_1 = $request->dosen_pembimbing_1;
+        $seminar -> dosen_pembimbing_2 = $request->dosen_pembimbing_2;
+        $seminar -> bidang = $request -> bidang;
+
+        $seminar -> borang_ta_1 = $borang_ta_1;
+        $seminar -> buku_skripsi = $buku_skripsi;
+        $seminar -> slide_presentasi = $slide_presentasi;
+        $seminar -> bukti_persetujuan = $bukti_persetujuan;
+
+        $seminar -> file_borang_ta_1 = $file_borang_ta_1 ;
+        $seminar -> file_buku_skripsi = $file_buku_skripsi;
+        $seminar -> file_slide_presentasi = $file_slide_presentasi;
+        $seminar -> file_bukti_persetujuan = $file_bukti_persetujuan;
+
+        $seminar -> keterangan = 'seminar hasil';
+        $seminar -> save();
+
+        return redirect()->route('beranda')->with('message', 'Upload complete');
+    }
 }
