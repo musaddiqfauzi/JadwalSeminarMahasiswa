@@ -56,7 +56,7 @@
 							<label class="floating-label" for="Password">Konfirmasi Password</label>
 							<input type="password" class="form-control" id="Password" placeholder="">
 						</div>
-						<a href="/index"><button class="btn btn-primary btn-block mb-4">Daftar</button></a>
+						<button type="button" class="btn btn-primary sweet-success mb-4">Daftar</button>
 						<p class="mb-2">Sudah punya akun? <a href="/login" class="f-w-400">Masuk</a></p>
 					</div>
 				</div>
@@ -72,7 +72,16 @@
 <script src="assets/js/ripple.js"></script>
 <script src="assets/js/pcoded.min.js"></script>
 
+<script src="assets/js/plugins/sweetalert.min.js"></script>
 
+<script>
+	$(document).ready(function() {
+		$('.sweet-success').on('click', function() {
+		swal("Akun Anda Sudah Terdaftar", "Silakan Login Pada Aplikasi", "success");
+	});
+		
+	})
+</script>
 
 </body>
 

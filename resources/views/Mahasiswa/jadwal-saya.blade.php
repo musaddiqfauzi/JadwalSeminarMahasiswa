@@ -202,10 +202,10 @@
 											BANDAR UDARA INTERNASIONAL SULTAN ISKANDAR MUDA)</td>
                                         <td>
 											<h6>Ketua Seminar:</h6>
-											<p>Dr. Ir. Roslidar, S.T., M.Sc., IPM</p>
+											<p>Dr. Ir. Roslidar, S.T., M.Sc., IPM.</p>
 										</td>
 										<td>
-											<p>Ir. Afdhal, S.T., M.Sc</p>
+											<p>Ir. Afdhal, S.T., M.Sc.</p>
 										</td>
                                         <td><b><p class="text-success">Kamis, 28 November 2019<br>08.00 - 10.45</p></b></td>
 										<td>
@@ -221,13 +221,13 @@
 											ALUR ALGORITMA GENETIKA BERBASIS WEBSITE</td>
                                         <td>
 											<h6>Ketua Seminar:</h6>
-											<p>Dr. Ir. Melinda, S.T., M.Sc., IPU</p>
+											<p>Dr. Ir. Melinda, S.T., M.Sc., IPU.</p>
 											<h6>Pembimbing:</h6>
 											<p>1. Dr. Ir. Rizal Munadi, MM., M.T.</p>
 											<p>2. Ardiansyah, BSEE., M.Sc</p>
 										</td>
 										<td>
-											<p>1. Prof. Dr. Teuku Yuliar Arif, S.T., M.Kom</p>
+											<p>1. Prof. Dr. Teuku Yuliar Arif, S.T., M.Kom.</p>
 											<p>2. Muhammad Irhamsyah, S.T., M.T.</p>
 										</td>
                                         <td><b><p class="text-success">Rabu, 09 Desember 2020<br>10.30 - 13.45</p></b></td>
@@ -245,13 +245,13 @@
 											ALUR ALGORITMA GENETIKA BERBASIS WEBSITE</td>
                                         <td>
 											<h6>Ketua Seminar:</h6>
-											<p>Dr. Ir. Melinda, S.T., M.Sc., IPU</p>
+											<p>Dr. Ir. Melinda, S.T., M.Sc., IPU.</p>
 											<h6>Pembimbing:</h6>
 											<p>1. Dr. Ir. Rizal Munadi, MM., M.T.</p>
-											<p>2. Ardiansyah, BSEE., M.Sc</p>
+											<p>2. Ardiansyah, BSEE., M.Sc.</p>
 										</td>
 										<td>
-											<p>1. Prof. Dr. Teuku Yuliar Arif, S.T., M.Kom</p>
+											<p>1. Prof. Dr. Teuku Yuliar Arif, S.T., M.Kom.</p>
 											<p>2. Muhammad Irhamsyah, S.T., M.T.</p>
 										</td>
                                         <td><label class="badge badge-light-info">Diproses</label></td>
