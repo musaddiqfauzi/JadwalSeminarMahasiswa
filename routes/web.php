@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SeminarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,17 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('Mahasiswa.login');
-});
+// Route::get('/', function () {
+//     return view('Mahasiswa.login');
+// });
 
-Route::get('/reset-password', function () {
-    return view('Mahasiswa.reset-password');
-});
+// Route::get('/reset-password', function () {
+//     return view('Mahasiswa.reset-password');
+// });
 
-Route::get('/index', function () {
-    return view('Mahasiswa.index');
-});
+// Route::get('/index', function () {
+//     return view('Mahasiswa.index');
+// });
 
 Route::get('/informasi-seminar', function () {
     return view('Mahasiswa.informasi-seminar');
@@ -57,11 +59,22 @@ Route::get('/mhs-form-jadwal', function () {
     return view('Mahasiswa.mhs-form-jadwal');
 });
 
-Route::get('/login', function () {
-    return view('Mahasiswa.login');
-});
+// Route::get('/login', function () {
+//     return view('Mahasiswa.login');
+// });
 
-Route::get('/register', function () {
-    return view('Mahasiswa.register');
-});
+// Route::get('/register', function () {
+//     return view('Mahasiswa.register');
+// });
+
+//New Route
+//Auth Route
+Route::get('/',[AuthController::class,'index'])->name('login');
+Route::post('login',[AuthController::class,'login'])->name('login.mhs');
+Route::get('/register',[AuthController::class,'register'])->name('register');
+Route::post('register',[AuthController::class,'Registration']);
+
+//Seminar Route
+Route::get('/beranda',[SeminarController::class,'index'])->name('beranda');
+Route::post('proposal',[SeminarController::class,'store'])->name('proposal');
 
