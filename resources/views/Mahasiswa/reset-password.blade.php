@@ -42,11 +42,11 @@
 						</div>
 						<div class="form-group mb-4">
 							<label class="floating-label" for="username">Nama Lengkap</label>
-							<input type="password" class="form-control" id="username">
+							<input type="type" class="form-control" id="username">
 						</div>
 						<div class="form-group mb-4">
 							<label class="floating-label" for="email">Email Unsyiah</label>
-							<input type="password" class="form-control" id="email">
+							<input type="email" class="form-control" id="email">
 						</div>
 						<div>
 						<a href="/login"><button class="btn btn-block btn-primary mb-4">Kembali</button></a>
