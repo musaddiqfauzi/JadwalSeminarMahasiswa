@@ -21,8 +21,8 @@
 	<link rel="stylesheet" href="assets/css/plugins/select2.min.css">
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    
+
+
 
 </head>
 <body class="background-grd-green">
@@ -37,7 +37,7 @@
 	<nav class="pcoded-navbar menu-light ">
 		<div class="navbar-wrapper  ">
 			<div class="navbar-content scroll-div " >
-				
+
 				<div class="">
 					<div class="main-menu-header">
 						<img class="img-radius" src="assets/images/user/Avatar-06.jpg" alt="User-Profile-Image">
@@ -65,14 +65,14 @@
 	<!-- [ navigation menu ] end -->
 	<!-- [ Header ] start -->
 	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
-		
-			
+
+
 		<div class="m-header">
 			<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
 			<a href="#!" class="b-brand">
 				<!-- ========   change your logo here   ============ -->
 				<img src="assets/images/Logo-TE-01.png" width="90%" alt="" class="logo">
-				
+
 			</a>
 			<a href="#!" class="mob-toggler">
 				<i class="feather icon-more-vertical"></i>
@@ -141,12 +141,12 @@
 				</li>
 			</ul>
 		</div>
-		
-	
+
+
 </header>
 	<!-- [ Header ] end -->
-	
-	
+
+
 
 <!-- [ Main Content ] start -->
 <div class="pcoded-main-container">
@@ -241,74 +241,75 @@
 									<div class="col-md-8">
 										<h5 class="mt-3">Form Seminar Proposal</h5>
 										<hr>
-										<form>
+										<form action="{{route('proposal')}}" enctype="multipart/form-data" method="POST">
+                                            @csrf
 											<div class="row mb-3">
 												<label for="inputEmail3" class="col-sm-3 col-form-label">Judul</label>
 												<div class="col-sm-9">
-													<input type="text" class="form-control" id="inputEmail3">
+													<input type="text" name="judul" class="form-control" id="inputEmail3">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Bidang</label>
 												<div class="col-sm-9">
-													<select class="js-bidang-array col-sm-12"></select>
+													<select class="js-bidang-array col-sm-12" name="bidang"></select>
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Dosen Wali</label>
 												<div class="col-sm-9">
-													<select class="js-dosen-array col-sm-12"></select>
+													<select class="js-dosen-array col-sm-12" name="dosen_wali"></select>
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Dosen Pembimbing 1</label>
 												<div class="col-sm-9">
-													<select class="js-dosen-array col-sm-12"></select>
+													<select class="js-dosen-array col-sm-12" name="dosen_pembimbing_1"></select>
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Dosen Pembimbing 2</label>
 												<div class="col-sm-9">
-													<select class="js-dosen-array col-sm-12"></select>
+													<select class="js-dosen-array col-sm-12 " name="dosen_pembimbing_2"></select>
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Borang TA-1 (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="borang_ta_1" aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Transkrip Online (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="transkrip_online" aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Proposal TA (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="proposal_ta" aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Lembaran Plagiasi (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="lembaran_plagiasi"  aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Slide Presentasi (.ppt)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="slide_presentasi" aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Bukti Persetujuan Dosen Pembimbing (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="bukti_persetujuan" aria-label="file example">
 												</div>
 											</div>
-											<button type="button" class="btn btn-primary sweet-success">Ajukan Penjadwalan</button>
+											<button type="submit" class="btn btn-primary">Ajukan Penjadwalan</button>
 										</form>
 									</div>
 								</div>
@@ -453,7 +454,7 @@
 
 </div>
 </div>
-<!-- [ Main Content ] end -->	
+<!-- [ Main Content ] end -->
 
 <!-- Required Js -->
 <script src="assets/js/vendor-all.min.js"></script>
@@ -475,7 +476,7 @@
 			id: 0,
 			text: '--- Pilih Dosen ---'
 		}, {
-			id: 1,
+			id: 'Prof. Dr. Ir Yuwaldi Away, M.Sc',
 			text: 'Prof. Dr. Ir Yuwaldi Away, M.Sc'
 		}, {
 			id: 2,
@@ -663,11 +664,11 @@
     $(".js-bidang-array").select2({
         data: data2
     });
-	
+
 		$('.sweet-success').on('click', function() {
 		swal("Terima Kasih", "Jadwal Anda Berhasil Diajukan", "success");
 	});
-		
+
 	})
 </script>
 

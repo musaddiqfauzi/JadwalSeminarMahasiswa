@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 	<title>Jadwal Seminar | Register</title>
 	<!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,9 +20,6 @@
 	<link rel="icon" href="assets/images/logo-unsyiah.ico" type="image/x-icon">
 	<!-- vendor css -->
 	<link rel="stylesheet" href="assets/css/style.css">
-	
-	
-
 
 </head>
 
@@ -34,29 +30,32 @@
 			<div class="row align-items-center text-center">
 				<div class="col-md-12">
 					<div class="card-body">
-						<img src="assets/images/Logo-TE-02.png" alt="" class="img-fluid mb-4">
-						<h4 class="mb-3 f-w-400">Register</h4>
-						<div class="form-group mb-3">
-							<label class="floating-label" for="nim">NIM</label>
-							<input type="text" class="form-control" id="nim" placeholder="">
-						</div>
-						<div class="form-group mb-3">
-							<label class="floating-label" for="username">Nama Lengkap</label>
-							<input type="text" class="form-control" id="username" placeholder="">
-						</div>
-						<div class="form-group mb-3">
-							<label class="floating-label" for="email">Email Unsyiah</label>
-							<input type="email" class="form-control" id="email" placeholder="">
-						</div>
-						<div class="form-group mb-4">
-							<label class="floating-label" for="password">Password</label>
-							<input type="password" class="form-control" id="password" placeholder="">
-						</div>
-						<div class="form-group mb-4">
-							<label class="floating-label" for="Password">Konfirmasi Password</label>
-							<input type="password" class="form-control" id="Password" placeholder="">
-						</div>
-						<a href="/index"><button class="btn btn-primary btn-block mb-4">Daftar</button></a>
+                        <form method="POST" action="{{route('register')}}">
+                            @csrf
+                            <img src="assets/images/Logo-TE-02.png" alt="" class="img-fluid mb-4">
+                            <h4 class="mb-3 f-w-400">Register</h4>
+                            <div class="form-group mb-3">
+                                <label class="floating-label" for="nim">NIM</label>
+                                <input type="text" name="nim" class="form-control" id="nim" placeholder="">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="floating-label" for="username">Nama Lengkap</label>
+                                <input type="text" name="name" class="form-control" id="username" placeholder="">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="floating-label" for="email">Email Unsyiah</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label class="floating-label" for="password">Password</label>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="">
+                            </div>
+                            {{-- <div class="form-group mb-4">
+                                <label class="floating-label" for="Password">Konfirmasi Password</label>
+                                <input type="password" class="form-control" id="Password" placeholder="">
+                            </div> --}}
+                            <a href="/index"><button class="btn btn-primary btn-block mb-4">Daftar</button></a>
+                        </form>
 						<p class="mb-2">Sudah punya akun? <a href="/login" class="f-w-400">Masuk</a></p>
 					</div>
 				</div>

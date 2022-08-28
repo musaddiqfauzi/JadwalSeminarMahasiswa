@@ -21,8 +21,8 @@
 	<link rel="icon" href="assets/images/logo-unsyiah.ico" type="image/x-icon">
 	<!-- vendor css -->
 	<link rel="stylesheet" href="assets/css/style.css">
-	
-	
+
+
 
 
 </head>
@@ -34,21 +34,24 @@
 			<div class="row align-items-center text-center">
 				<div class="col-md-12">
 					<div class="card-body">
-						<img src="assets/images/Logo-TE-02.png" alt="" class="img-fluid mb-4">
-						<h4 class="mb-3 f-w-400">Login</h4>
-						<div class="form-group mb-3">
-							<label class="floating-label" for="Email">NIM</label>
-							<input type="text" class="form-control" id="nim">
+                        <form method="POST" action="{{route('login.mhs')}}">
+                            @csrf
+                            <img src="assets/images/Logo-TE-02.png" alt="" class="img-fluid mb-4">
+                            <h4 class="mb-3 f-w-400">Login</h4>
+                            <div class="form-group mb-3">
+                                <label class="floating-label" for="Email">NIM</label>
+                                <input type="email" name="email" class="form-control" id="nim">
 						</div>
 						<div class="form-group mb-4">
 							<label class="floating-label" for="Password">Password</label>
-							<input type="password" class="form-control" id="password">
+							<input type="password" name="password" class="form-control" id="password">
 						</div>
 						<div class="form-check text-start mb-4 mt-2">
-							<input type="checkbox" class="form-check-input" id="customCheck1">
+                            <input type="checkbox" class="form-check-input" id="customCheck1">
 							<label class="form-check-label" for="customCheck1">Simpan Informasi</label>
 						</div>
-						<a href="/index"><button class="btn btn-block btn-primary mb-4">Masuk</button></a>
+						<button class="btn btn-block btn-primary mb-4">Masuk</button>
+                        </form>
 						<p class="mb-2 text-muted">Lupa password? <a href="/reset-password" class="f-w-400">Reset</a></p>
 						<p class="mb-0 text-muted">Belum terdaftar? <a href="/register" class="f-w-400">Daftar</a></p>
 					</div>
