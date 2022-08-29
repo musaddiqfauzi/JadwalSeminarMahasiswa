@@ -35,7 +35,7 @@
 	<nav class="pcoded-navbar menu-light ">
 		<div class="navbar-wrapper  ">
 			<div class="navbar-content scroll-div " >
-				
+
 				<div class="">
 					<div class="main-menu-header">
 						<img class="img-radius" src="assets/images/user/Avatar-06.jpg" alt="User-Profile-Image">
@@ -63,14 +63,14 @@
 	<!-- [ navigation menu ] end -->
 	<!-- [ Header ] start -->
 	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
-		
-			
+
+
 		<div class="m-header">
 			<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
 			<a href="#!" class="b-brand">
 				<!-- ========   change your logo here   ============ -->
 				<img src="assets/images/Logo-TE-01.png" width="90%" alt="" class="logo">
-				
+
 			</a>
 			<a href="#!" class="mob-toggler">
 				<i class="feather icon-more-vertical"></i>
@@ -141,8 +141,8 @@
 		</div>
 </header>
 	<!-- [ Header ] end -->
-	
-	
+
+
 
 <!-- [ Main Content ] start -->
 <div class="pcoded-main-container">
@@ -190,32 +190,35 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-									                                  
-									<tr>
+                                    @forelse ($seminars as $seminar)
+                                    <tr>
                                         <td>
                                             <div class="d-inline-block">
-                                                <h6>Rahmadani</h6>
-                                                <p class="text-muted m-b-0">1504105010037</p>
+                                                <h6> {{$seminar->name}} </h6>
+                                                <p class="text-muted m-b-0">{{$seminar->nim}}</p>
                                             </div>
                                         </td>
-                                        <td><label class="badge badge-light-info">Seminar Hasil</label></td>
-										<td>RANCANG BANGUN PERANGKAT IOT MULTI-POINT BERBASIS ESP32<br>
-											UNTUK PENGENDALIAN KONSUMSI LISTRIK</td>
+                                        <td><label class="badge badge-light-info"> {{$seminar->keterangan}} </label></td>
+										<td> {{$seminar->judul}} </td>
                                         <td>
 											<h6>Ketua Seminar:</h6>
-											<p>Muhammad Irhamsyah, S.T., M.T.</p>
+											<p> {{$seminar->dosen_wali}} </p>
 											<h6>Pembimbing:</h6>
-											<p>1. Ir. Agus Adria, M.Sc</p>
-											<p>2. Prof. Dr. Ir Yuwaldi Away, M.Sc</p>
+											<p>1. {{$seminar->dosen_pembimbing_1}} </p>
+											<p>2. {{$seminar->dosen_pembimbing_2}}</p>
 										</td>
 										<td>
-											<p>1. Ir. Hafidh, S.T., M.T., IPU</p>
-											<p>2. Ir. Fardian, S.T., M.Sc</p>
+											<p>1. {{$seminar->dosen_penguji_1}}</p>
+											<p>2. {{$seminar->dosen_penguji_2}}</p>
 										</td>
 										<td><b><p class="text-success">Selasa, 05 Juli 2022 <br> 08.00 -10.30 AM</p></b></td>
                                     </tr>
-                                    
-									<tr>
+                                    @empty
+
+                                    @endforelse
+
+
+									{{-- <tr>
                                         <td>
                                             <div class="d-inline-block">
                                                 <h6>Muhammad Muda Juli</h6>
@@ -238,7 +241,7 @@
 										</td>
 										<td><b><p class="text-success">Jumat, 08 Juli 2022 <br> 14.30 - 16.30 AM</p></b></td>
                                     </tr>
-                                    
+
 									<tr>
                                         <td>
                                             <div class="d-inline-block">
@@ -247,7 +250,7 @@
                                             </div>
                                         </td>
                                         <td><label class="badge badge-light-info">Seminar Hasil</label></td>
-                                        <td>PENJADWALAN SEMINAR DAN SIDANG MENGGUNAKAN <br> 
+                                        <td>PENJADWALAN SEMINAR DAN SIDANG MENGGUNAKAN <br>
 											ALUR ALGORITMA GENETIKA BERBASIS WEBSITE</td>
                                         <td>
 											<h6>Ketua Seminar:</h6>
@@ -263,8 +266,8 @@
 										<td><label class="badge badge-light-info">Diproses</label></td>
 										<!-- <td><label class="badge badge-light-danger">Diajukan</label></td> -->
                                     </tr>
-                                    
-									<tr>    
+
+									<tr>
 										<td>
                                             <div class="d-inline-block">
                                                 <h6>Rahmadani</h6>
@@ -287,7 +290,7 @@
 										</td>
                                         <td><b><p class="text-success">Rabu, 20 Juli 2022 <br> 08.00 -10.30 AM</p></b></td>
                                     </tr>
-                                    
+
 									<tr>
                                     	<td>
                                             <div class="d-inline-block">
@@ -296,7 +299,7 @@
                                             </div>
                                         </td>
                                         <td><label class="badge badge-light-success">Sidang</label></td>
-                                        <td>PERANCANGAN SISTEM OTOMASI TEH DAUN KELOR <br> 
+                                        <td>PERANCANGAN SISTEM OTOMASI TEH DAUN KELOR <br>
 											MENGGUNAKAN METODE FUZZY LOGIC</td>
                                         <td>
 											<h6>Ketua Seminar:</h6>
@@ -336,7 +339,7 @@
 										</td>
                                         <td><label class="badge badge-light-info">Diproses</label></td>
                                     </tr>
-								
+
 									<tr>
 										<td>
 											<div class="d-inline-block">
@@ -345,7 +348,7 @@
                                             </div>
                                         </td>
                                         <td><label class="badge badge-light-info">Seminar Hasil</label></td>
-                                        <td>RANCANG BANGUN APLIKASI AUGMENTED REALITY ALAT MUSIK <br> 
+                                        <td>RANCANG BANGUN APLIKASI AUGMENTED REALITY ALAT MUSIK <br>
 											TRADISIONAL ACEH BERBASIS ANDROID</td>
                                         <td>
 											<h6>Ketua Seminar:</h6>
@@ -359,7 +362,7 @@
 											<p>2. Al Bahri, S.ST., M.T</p>
 										</td>
                                         <td><label class="badge badge-light-info">Diproses</label></td>
-                                    </tr>
+                                    </tr> --}}
                                 </tbody>
 
                             </table>

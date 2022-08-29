@@ -55,9 +55,9 @@ Route::get('/mhs-form-edit-sidang', function () {
     return view('Mahasiswa.mhs-form-edit-sidang');
 });
 
-Route::get('/mhs-form-jadwal', function () {
-    return view('Mahasiswa.mhs-form-jadwal');
-});
+// Route::get('/mhs-form-jadwal', function () {
+//     return view('Mahasiswa.mhs-form-jadwal');
+// });
 
 // Route::get('/login', function () {
 //     return view('Mahasiswa.login');
@@ -79,4 +79,8 @@ Route::get('/beranda',[SeminarController::class,'index'])->name('beranda');
 Route::post('proposal',[SeminarController::class,'store'])->name('proposal');
 
 Route::post('hasil',[SeminarController::class,'seminarhasil'])->name('seminarhasil');
+
+Route::post('sidang',[SeminarController::class,'sidang'])->name('sidang');
+
+Route::get('/mhs-form-jadwal',[SeminarController::class,'seminar']);
 

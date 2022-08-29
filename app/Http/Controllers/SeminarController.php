@@ -5,13 +5,24 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Storage;
 use App\Models\Seminar;
+use Illuminate\Support\Facades\DB;
 
 class SeminarController extends Controller
 {
 
     public function index()
     {
-        return view('Mahasiswa.index');
+        $seminars = Seminar::oldest()->paginate(20);
+        return view('Mahasiswa.index', compact('seminars'));
+    }
+
+    public function seminar()
+    {
+        $data = DB::table('seminars')
+        ->where('nim','=','1504103010034')
+        ->first();
+        return view('Mahasiswa.mhs-form-jadwal',compact('data'));
+
     }
 
     public function store(Request $request)
@@ -94,6 +105,47 @@ class SeminarController extends Controller
         $seminar -> file_bukti_persetujuan = $file_bukti_persetujuan;
 
         $seminar -> keterangan = 'seminar hasil';
+        $seminar -> save();
+
+        return redirect()->route('beranda')->with('message', 'Upload complete');
+    }
+
+    public function sidang(Request $request)
+    {
+        $nim = '1504103010034';
+        $file_borang_ta_1 = Storage::putFile('hasil/' . $nim, $request->file('borang_ta_1'));
+        $file_buku_skripsi = Storage::putFile('hasil/' . $nim, $request->file('buku_skripsi'));
+        $file_slide_presentasi = Storage::putFile('hasil/' . $nim, $request->file('slide_presentasi'));
+        $file_bukti_persetujuan = Storage::putFile('hasil/' . $nim, $request->file('bukti_persetujuan'));
+        $file_transkrip_online = Storage::putFile('proposal/' . $nim, $request->file('transkrip_online'));
+
+        $borang_ta_1 = $request->file('borang_ta_1')->getClientOriginalName();
+        $buku_skripsi = $request->file('buku_skripsi')->getClientOriginalName();
+        $slide_presentasi = $request->file('slide_presentasi')->getClientOriginalName();
+        $bukti_persetujuan = $request->file('bukti_persetujuan')->getClientOriginalName();
+        $transkrip_online = $request->file('transkrip_online')->getClientOriginalName();
+
+        $seminar = new Seminar;
+        $seminar -> name = 'akmal fadhilah';
+        $seminar -> nim = $nim;
+        $seminar -> judul = $request->judul;
+        $seminar -> dosen_pembimbing_1 = $request->dosen_pembimbing_1;
+        $seminar -> dosen_pembimbing_2 = $request->dosen_pembimbing_2;
+        $seminar -> bidang = $request -> bidang;
+
+        $seminar -> borang_ta_1 = $borang_ta_1;
+        $seminar -> buku_skripsi = $buku_skripsi;
+        $seminar -> slide_presentasi = $slide_presentasi;
+        $seminar -> bukti_persetujuan = $bukti_persetujuan;
+        $seminar -> transkrip_online = $transkrip_online;
+
+        $seminar -> file_borang_ta_1 = $file_borang_ta_1 ;
+        $seminar -> file_buku_skripsi = $file_buku_skripsi;
+        $seminar -> file_slide_presentasi = $file_slide_presentasi;
+        $seminar -> file_bukti_persetujuan = $file_bukti_persetujuan;
+        $seminar -> file_transkrip_online = $file_transkrip_online;
+
+        $seminar -> keterangan = 'sidang';
         $seminar -> save();
 
         return redirect()->route('beranda')->with('message', 'Upload complete');

@@ -324,25 +324,25 @@
 											<div class="row mb-3">
 												<label for="inputEmail3" class="col-sm-3 col-form-label">Judul</label>
 												<div class="col-sm-9">
-													<input type="text" name="judul" class="form-control" id="inputEmail3">
+													<input type="text" name="judul" value="{{ old('judul', $data->judul) }}" class="form-control" id="inputEmail3">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Bidang</label>
 												<div class="col-sm-9">
-													<select class="js-bidang-array col-sm-12" name="bidang"></select>
+													<input type="text" name="bidang" value="{{ old('bidang', $data->bidang) }}" class="form-control" id="inputEmail3">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Dosen Pembimbing 1</label>
 												<div class="col-sm-9">
-													<select class="js-dosen-array col-sm-12" name="dosen_pembimbing_1"></select>
+													<input type="text" name="dosen_pembimging_1" value="{{ old('dosen_pembimbing_1', $data->dosen_pembimbing_1) }}" class="form-control" id="inputEmail3">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Dosen Pembimbing 2</label>
 												<div class="col-sm-9">
-													<select class="js-dosen-array col-sm-12" name="dosen_pembimbing_2"></select>
+													<input type="text" name="dosen_pembimging_2" value="{{ old('dosen_pembimbing_2', $data->dosen_pembimbing_2) }}" class="form-control" id="inputEmail3">
 												</div>
 											</div>
 											<div class="row mb-3">
@@ -379,68 +379,68 @@
 									<div class="col-md-8">
 										<h5 class="mt-3">Form Sidang</h5>
 										<hr>
-										<form>
+										<form action="{{route('sidang')}}" enctype="multipart/form-data" method="POST">
 											<div class="row mb-3">
 												<label for="inputEmail3" class="col-sm-3 col-form-label">Judul</label>
 												<div class="col-sm-9">
-													<input type="text" class="form-control" id="inputEmail3">
+													<input type="text" name="judul" value="{{ old('judul', $data->judul) }}" class="form-control" id="inputEmail3">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Bidang</label>
 												<div class="col-sm-9">
-													<select class="js-bidang-array col-sm-12"></select>
+													<input type="text" name="bidang" value="{{ old('bidang', $data->bidang) }}" class="form-control" id="inputEmail3">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Dosen Pembimbing 1</label>
 												<div class="col-sm-9">
-													<select class="js-dosen-array col-sm-12"></select>
+													<input type="text" name="dosen_pembimging_1" value="{{ old('dosen_pembimbing_1', $data->dosen_pembimbing_1) }}" class="form-control" id="inputEmail3">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Dosen Pembimbing 2</label>
 												<div class="col-sm-9">
-													<select class="js-dosen-array col-sm-12"></select>
+													<input type="text" name="dosen_pembimging_2" value="{{ old('dosen_pembimbing_2', $data->dosen_pembimbing_2) }}" class="form-control" id="inputEmail3">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Borang TA-2 (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="borang_ta_1" aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Transkrip Akhir (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="transkrip_online" aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Buku Skripsi (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="buku_skipsi" aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Lembaran Plagiasi (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" class="form-control" name="lembaran_plagiasi" aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Slide Presentasi (.ppt)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" name="slide_presentasi" class="form-control" aria-label="file example">
 												</div>
 											</div>
 											<div class="row mb-3">
 												<label for="inputPassword3" class="col-sm-3 col-form-label">Bukti Persetujuan Dosen Pembimbing (.pdf)</label>
 												<div class="col-sm-9">
-													<input type="file" class="form-control" aria-label="file example">
+													<input type="file" name="bukti_persetujuan" class="form-control" aria-label="file example">
 												</div>
 											</div>
-											<button type="button" class="btn btn-primary sweet-success">Ajukan Penjadwalan</button>
+											<button type="submit" class="btn btn-primary sweet-success">Ajukan Penjadwalan</button>
 										</form>
 									</div>
 								</div>
